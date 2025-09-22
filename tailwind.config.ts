@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,16 +51,25 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        success: "hsl(var(--success))",
+        warning: "hsl(var(--warning))",
+        cyber: {
+          primary: "hsl(var(--cyber-primary))",
+          secondary: "hsl(var(--cyber-secondary))",
+          glow: "hsl(var(--cyber-glow))",
         },
+      },
+      backgroundImage: {
+        'gradient-herbal': 'var(--gradient-herbal)',
+        'gradient-earth': 'var(--gradient-earth)',
+        'gradient-sage': 'var(--gradient-sage)',
+        'gradient-cyber': 'var(--gradient-cyber)',
+        'gradient-glow': 'var(--gradient-glow)',
+      },
+      boxShadow: {
+        'botanical': 'var(--shadow-botanical)',
+        'cyber': 'var(--shadow-cyber)',
+        'elegant': 'var(--shadow-elegant)',
       },
       borderRadius: {
         lg: "var(--radius)",
